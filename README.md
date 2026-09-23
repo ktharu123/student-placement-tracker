@@ -1,16 +1,98 @@
-# React + Vite
+# Student Placement Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A full-stack web application for managing student placement activities, company eligibility, job applications, and placement status.
 
-Currently, two official plugins are available:
+## Project Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The Student Placement Tracker provides separate workflows for students and placement administrators.
 
-## React Compiler
+Students can register, manage their profiles, check eligible companies, apply for placement opportunities, and track their application status.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Administrators can manage students, companies, applications, and placement statistics through an admin dashboard.
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Student
+
+- Student registration and login
+- Student profile management
+- Update student details
+- View eligible companies
+- CGPA and branch-based eligibility checking
+- Apply for companies
+- Duplicate application prevention
+- View applied companies
+- Track application status
+- View placement statistics
+
+### Admin
+
+- Admin login
+- Admin dashboard
+- View total students
+- View total companies
+- View total applications
+- Add companies
+- Update companies
+- Delete companies
+- View students
+- Delete students
+- View applications
+- Update application status
+
+### Application Status
+
+- APPLIED
+- SHORTLISTED
+- SELECTED
+- REJECTED
+
+## Technology Stack
+
+### Frontend
+
+- React
+- JavaScript
+- HTML
+- CSS
+- Vite
+
+### Backend
+
+- Java 21
+- Spring Boot 4.1.1
+- Spring Web
+- Spring Data JPA
+- Hibernate
+- Maven
+
+### Database
+
+- MySQL 8.0
+
+### Tools
+
+- Eclipse
+- VS Code
+- Postman
+- Git
+- GitHub
+
+## System Architecture
+
+```text
+React Frontend
+      |
+      | REST API
+      |
+Spring Boot Backend
+      |
+      +-- Controller Layer
+      |
+      +-- Service Layer
+      |
+      +-- Repository Layer
+      |
+      +-- JPA / Hibernate
+      |
+    MySQL
